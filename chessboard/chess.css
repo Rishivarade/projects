@@ -1,0 +1,41 @@
+*
+{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+header
+{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    margin: auto; 
+    overflow-x: hidden;  
+}
+.main
+{
+    width: 90%;
+    height: 90%;
+    margin:40px;
+    padding-right: 50px;
+    margin-left: 30%;    
+}
+.black
+{
+    height:80px;
+    width: 80px;
+    background-color: black;
+    float: left;
+}
+.white
+{
+    background-color: grey;
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+.box
+{
+    margin: auto;
+    clear: both;
+}
