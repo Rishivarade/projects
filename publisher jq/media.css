@@ -1,0 +1,16 @@
+@media  (max-width: 480px)
+{
+   .contener
+   {
+    
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    
+ 
+   }
+   .main
+   {
+    width: 450px;
+    height: 208px;
+   }
+}
