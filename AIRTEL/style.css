@@ -1,0 +1,229 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+ul li a
+{
+    text-decoration: none   ;
+}
+.con1 li a
+{
+    color: black;
+}
+.con2 li a
+{
+    color: black;
+    font-size: 15px;   
+}
+.dropdown:hover
+{
+    background-color: rgb(235, 233, 233);
+}
+.dropdown:hover .submenu 
+{
+    display: block;    
+    transition: 0.3s all ease-in-out;
+}
+.ooo input
+{
+    border-radius: 5px;
+}
+.ooo a
+{
+    border-radius: 5px;
+}
+.con1 .first ul li a:hover 
+{
+    color: rgb(226, 98, 66);
+}
+.con1 .first ul li a::before
+{
+    content: '';    
+    width: 0%;
+    height: 5px;
+    margin-top:-15px;
+    margin-bottom: 12px;
+    border: 1px solid rgb(241, 112, 53);
+    background-color: rgb(241, 112, 53);
+    transition: all 0.1s;
+    display: none;
+}
+.con1 .first li a:hover::before
+{
+     
+    width: 100%;
+    display: block;    
+}
+.con1 button:hover 
+{
+    color: rgb(226, 98, 66);
+}
+.con1 button::before
+{
+    content: '';    
+    width: 0%;
+    height: 5px;
+    margin-top:-10px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(241, 112, 53);
+    background-color: rgb(241, 112, 53);
+    transition: all 0.2s ease-in-out;
+    display: none;
+}
+.con1 button:hover::before
+{
+     
+    width: 100%;
+    display: block;    
+}
+
+.two button:hover 
+{
+    color: rgb(226, 98, 66);
+}
+.two button::before
+{
+    content: '';    
+    width: 0%;
+    height: 5px;
+    margin-top:-15px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(241, 112, 53);
+    background-color: rgb(241, 112, 53);
+    transition: all 0.2s ease-in-out;
+    display: none;
+}
+.two button:hover::before
+{
+     
+    width: 100%;
+    display: block;    
+}
+.banner button
+{
+    background-color: red;
+}
+.banner button:hover 
+{
+    background-color: rgb(128, 128, 128);
+    transition: 0.3s;
+}
+.icon
+{
+    width: 80%;
+    margin: auto;
+}
+.icon ul li 
+{
+    margin: 30px;
+    margin-bottom: 0%;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    border-radius: 50%;  
+    background-color: rgb(222, 224, 222);
+}
+.icon i
+{
+    color: black;
+}
+.icon path
+{
+    color: black;
+}
+.icon li:hover
+{
+    background-color: rgb(185, 206, 224);
+    border: 1px solid grey;
+    transition: 0.3s all ease-in-out;
+}
+.banner2
+{
+    background-color: #ff4949;
+    bottom: 1px solid #ff4949;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.banner2 button
+{
+    background-color: red;
+}
+.banner2 button:hover 
+{
+    background-color: rgb(128, 128, 128);
+    transition: 0.3s;
+}
+.list .card
+{
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 15px;
+}
+.list .card img
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px ;
+}
+.img1
+{
+    background: url('https://assets.airtel.in/static-assets/home-recast/images/conversational-widget-bg-web.png');
+    background-repeat: no-repeat;  
+    background-size: cover; 
+}
+.list p
+{
+    font-size: 14px;
+}
+.list .btn
+{
+    border-radius: 10px;
+    background-color: black; 
+    color: white;
+}
+.list .card a
+{
+    font-size: 12px; 
+    
+}
+.img1 .card
+{
+    border-radius: 10px;
+}
+.img1 a:hover
+{
+    border: 1px solid rgb(172, 185, 196);
+    transition: 0.3s all ease-in-out;
+}
+.col3 .card p
+{
+    font-size: 13px;
+}
+.col3 .card
+{
+    border-radius: 15px;
+}
+.foot p
+{
+    font-size: 12px;    
+}
+.ip i
+{
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.foot a
+{
+    color: black;
+    font-size: 14px;
+}
+.foot a:hover
+{
+    color: rgb(241, 112, 53);
+}

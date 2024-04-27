@@ -1,0 +1,385 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.mr {
+  margin: 0%;
+  list-style: none;
+}
+
+.banner  
+{
+  background-image: url('images/hero-bg.jpg');
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.banner h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  color: aqua;
+}
+
+.navbar li::after {
+  color: aqua;
+  height: 5px;
+  width: 100%;
+  background-color: chartreuse;
+  transition: 0.2s all ease-in-out;
+}
+
+.navbar li button::after {
+  content: ('');
+  height: 2px;
+  margin-top: -3px;
+  margin-left: 0%;
+  background-color: none;
+  border: 0px solid aqua;
+  width: 0%;
+  display: block;
+  transition: 0.4s all ease-in-out;
+
+}
+
+.navbar li button:hover::after {
+  width: 100%;
+  display: block;
+  background-color: aqua;
+  transition: 0.3s all ease-in-out;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.dropdown .submenu {
+  position: absolute;
+}
+
+.menu {
+  position: absolute;
+  left: 100%;
+  top: -10%;
+  display: none;
+  border: 1px solid rgb(98, 209, 209);
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+.submenu:hover .menu {
+  display: block;
+  transition: 0.8s all ease-in-out;
+}
+
+.cd-headline.rotate-1 .cd-words-wrapper {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px;
+}
+
+.cd-headline.rotate-1 b {
+  opacity: 0;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.cd-headline.rotate-1 b.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-animation: cd-rotate-1-in 1.2s;
+  -moz-animation: cd-rotate-1-in 1.2s;
+  animation: cd-rotate-1-in 1.2s;
+}
+
+.cd-headline.rotate-1 b.is-hidden {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  -webkit-animation: cd-rotate-1-out 1.2s;
+  -moz-animation: cd-rotate-1-out 1.2s;
+  animation: cd-rotate-1-out 1.2s;
+}
+
+@-webkit-keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes cd-rotate-1-in {
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes cd-rotate-1-in {
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  35% {
+    -webkit-transform: rotateX(-40deg);
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes cd-rotate-1-out {
+  0% {
+    -moz-transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  35% {
+    -moz-transform: rotateX(-40deg);
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes cd-rotate-1-out {
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  35% {
+    -webkit-transform: rotateX(-40deg);
+    -moz-transform: rotateX(-40deg);
+    -ms-transform: rotateX(-40deg);
+    -o-transform: rotateX(-40deg);
+    transform: rotateX(-40deg);
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+}
+
+.line {
+  width: 50px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: auto;
+}
+
+.icon i {
+  color: black;
+  border-radius: 50%;
+  padding: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: white;
+  box-shadow: 0 0 0 10px #0078ff;
+  transition: 0.4s all ease;
+}
+
+.ii:hover i {
+  background-color: #0078ff;
+  color: white;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.banner2 {
+  background-image: linear-gradient(90deg, rgb(98, 142, 223) 0%, rgba(32, 81, 243, 0.827) 0%), url('https://bootstrapmade.com/demo/templates/DevFolio/assets/img/counters-bg.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 400px;
+  background-size: 100%;
+}
+
+.sym i {
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+.pic
+{
+  overflow: hidden;
+}
+.card .pic img:hover
+{
+  transform: scale(1.4);
+  overflow: hidden;
+  transition: 0.8s all ease-in-out;
+}
+.slider1
+{
+  background-image: linear-gradient(90deg, rgb(65, 125, 236) 0%, rgba(48, 122, 233, 0.827) 0%), url('https://bootstrapmade.com/demo/templates/DevFolio/assets/img/overlay-bg.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 600px;
+  background-size: 100%;
+}
+.line1
+{
+  width: 20%;
+  height: 5px;
+  background-color: #0078ff;
+  
+}
+.footicon ul li i
+{
+  border: 3px solid #0078ff;
+  border-radius: 50%;
+  padding: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  color: black;
+}
+.footicon ul li i:hover
+{
+  border: 3px solid #cde1f8;
+  background-color:#0078ff;
+  color: white;
+  transition: 0.4s all ease-in-out;
+}
+.foot1
+{
+  border: 1px solid;
+  padding: 4%;
+  background-color: white;
+  
+}
+.footer
+{
+  background-image: linear-gradient(90deg, rgb(65, 125, 236) 0%, rgba(48, 122, 233, 0.827) 0%), url('https://bootstrapmade.com/demo/templates/DevFolio/assets/img/overlay-bg.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  background-size: 100%;
+  box-shadow: 2px 2px 10px 0px black;
+}

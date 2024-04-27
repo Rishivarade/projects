@@ -1,0 +1,12 @@
+@media (max-width:1198px)
+{
+    .left
+    {
+        width: 0%;
+    }
+    .right
+    {
+        width: 100%;
+    }
+
+}

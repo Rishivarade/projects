@@ -1,0 +1,299 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    left: 90%;
+    top: -10%;
+    display: none;
+    border: 1px solid rgb(175, 172, 172);
+    background-color: white;
+}
+
+.dropdown-menu:hover .submenu {
+    display: block;
+}
+.italiic {
+    font-style: italic;
+}
+
+.navtab p {
+    text-align: left;
+}
+
+.navtab h2 {
+    text-align: left;
+    font-size: 20px;
+}
+
+.service {
+    width: 80%;
+    margin: auto;
+    z-index: (2000);
+}
+
+.service h2 {
+    color: grey;
+}
+
+.ram i {
+    font-size: 40px;
+}
+
+.ram .head {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.column {
+    width: 80%;
+    margin: auto;
+}
+
+.portfolio {
+    width: 80%;
+    margin: auto;
+}
+
+.portfolio h2 {
+    color: grey;
+}
+
+.banner2 {
+    background-image: linear-gradient(90deg, rgb(225, 226, 221) 0%, rgba(248, 248, 248, 0.827) 0%), url('https://bootstrapmade.com/demo/templates/Scaffold/assets/img/cta-bg.jpg');
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.slider {
+    width: 80%;
+    margin: auto
+}
+
+.swiper {
+    width: 80%;
+    height: 100%;
+}
+
+.swiper-slide {
+
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamlist {
+    width: 80%;
+    margin: auto;
+}
+
+.teamlist h2 {
+    color: grey;
+}
+
+.teams {
+    background-image: url('https://bootstrapmade.com/demo/templates/Scaffold/assets/img/team-bg.jpg');
+
+
+}
+
+.foot1 {
+    background-color: #ff689b;
+    height: 5px;
+    opacity: 0;
+}
+
+.foot2 {
+    background-color: aqua;
+    height: 5px;
+    opacity: 0;
+}
+
+.foot3 {
+    background-color: rgb(32, 185, 32);
+    ;
+    height: 5px;
+    opacity: 0;
+}
+
+.foot4 {
+    background-color: rgb(30, 127, 192);
+    height: 5px;
+    opacity: 0;
+}
+
+.uu ul {
+    opacity: 0;
+
+}
+
+.uu:hover ul {
+    transition: 0.3s all ease-in-out;
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.ram:hover {
+    transform: translateY(-5px);
+    transition: 0.3s all ease-in-out;
+}
+
+.ram:hover .foot1 {
+    opacity: 1;
+}
+
+.ram:hover .foot2 {
+    opacity: 1;
+}
+
+.ram:hover .foot3 {
+    opacity: 1;
+}
+
+.ram:hover .foot4 {
+    opacity: 1;
+}
+
+.info {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.icons i {
+    color: rgb(22, 124, 240);
+    font-size: 25px;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    border: 1px solid rgb(220, 241, 255);
+    background-color: rgb(192, 239, 245);
+    border-radius: 50%;
+
+}
+
+.icons {
+    position: absolute;
+    bottom: 5%;
+    left:41%;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.wrap:hover .info {
+    opacity: 1;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 10%;
+}
+
+.wrap:hover .icons {
+    opacity: 1;
+    bottom: 25%;
+}
+
+.scale img {
+    filter: grayscale(100);
+    transition: 0.2s all ease-in-out;
+
+}
+
+.scale img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.client
+{
+    width: 80%;
+    margin: auto;
+}
+.client h2 {
+    color: grey;
+}
+.pricing
+{
+    width: 80%;
+    margin: auto;
+}
+.pricing h2 {
+    color: grey;
+}
+.location i
+{
+    color: cornflowerblue;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 15px;
+    transition: 0.3s all ease-in-out;
+}
+.location i:hover
+{
+    background-color:rgb(44, 102, 209);
+    color: white;
+}
+.none a
+{
+    color: grey;
+}
+.none h3 
+{
+    color:  rgb(75, 72, 72);
+}
+.none h5 
+{
+    color: rgb(80, 78, 78);
+}
+.none h6 
+{
+    color: gray;
+}
+.listnone
+{
+    border: 1px solid rgb(220, 241, 255);
+    background-color: rgb(195, 215, 218);
+    border-radius: 50%;
+    color: rgb(161, 159, 159);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    font-size: 25px;
+}
+.listnone i
+{
+    font-size: 20px;
+}
+.listnone:hover 
+{
+    background-color: dodgerblue;
+    transition: 0.2s all ease-in-out;
+}

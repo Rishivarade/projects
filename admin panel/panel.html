@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid top fixed-top">
+    <div class="navbar d-flex justify-content-evenly align-items-center">
+      <button class="btn navbar-toggler bg-light border-dark pb-0 p-1 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"><i class="bi bi-hdd-stack"></i></span>
+      </button>
+      <div class="logo text-start ps-3" style="width: 25%;">
+        <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/icons/logo.png" alt="" width="10%"><span
+          style="font-size: 25px;color: grey;">phoenix</span>
+      </div>
+      <div class="input text-center" style="width: 40%;line-height: 30px;">
+        <input type="text" class="rounded-pill" placeholder="  search" style="width: 70%;">
+      </div>
+      <div class="icons text-end" style="width: 20%;">
+        <i class="bi bi-bell"></i>
+        <i class="bi bi-grid-3x3-gap-fill"></i>
+        <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/team/40x40/57.webp" alt=""
+          style="border-radius: 50%; width: 30px;">
+      </div>
+      <div class="offcanvas offcanvas-start" tab-index="-1" id="menu">
+        <div class="offcanvas-header pb-0">
+          <h2 class="offcanvas-title pt-3">MENU</h2>
+          <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+          <div class="navbar nav p-0 ps-2 d-block">
+            <div class="border-0 home">
+              <ul class="list-unstyled m-0">
+                <li class="list-styled-none" data-bs-toggle="collapse" href="#home" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="ri-pie-chart-fill me-2"></i>Home</a>
+                  <ul class="collapse list-unstyled ms-4" id="home">
+                    <li><a href="">E Commerce</a></li>
+                    <li><a href="">Project Management</a></li>
+                    <li><a href="">CRM</a></li>
+                    <li><a href="">Social feed</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <p style="color: #6e7891;" class="ms-4 mb-0">APPS</p>
+
+            <ul class="border-0 list-unstyled mb-0">
+              <li data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                    style="color: gray;"></i><i class="bi bi-cart me-2"></i>E-Commerce</a>
+                <ul class="collapse" id="collapseExample2">
+                  <li class="card card-body border-0 p-0" data-bs-toggle="collapse" href="#collapseExample3"
+                    role="button" aria-expanded="false" aria-controls="collapseExample"><a href="">Admin</a>
+                    <ul class="collapse" id="collapseExample3">
+                      <li class="card card-body border-0 p-0"><a href="">Add Product</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Products</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Customer</a></li>
+                    </ul>
+                  </li>
+                  <li class="card card-body border-0 mt-0 p-0" data-bs-toggle="collapse" href="#collapseExample4"
+                    role="button" aria-expanded="false" aria-controls="collapseExample"><a href="">Customer</a>
+                    <ul class="collapse" id="collapseExample4">
+                      <li class="card card-body border-0 p-0"><a href="">Homepage</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Product details</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Product filter</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="border-0 CRM">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#crm" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">
+                  <a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-telephone me-2"></i>CRM</a>
+                  <ul class="collapse list-unstyled ms-4" id="crm">
+                    <li><a href="">Analytics</a></li>
+                    <li><a href="">Deals</a></li>
+                    <li><a href="">Deals details</a></li>
+                    <li><a href="">Leads</a></li>
+                    <li><a href="">Leads details</a></li>
+                    <li><a href="">Reports</a></li>
+                    <li><a href="">Reports details</a></li>
+                    <li><a href="">Add Contact</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <p class="ms-5 mb-0 " c style="color: black; cursor: pointer;"><i class="bi bi-chat-left me-2 ms-2"></i>Chat
+            </p>
+
+            <div class="border-0 email list-unstyled">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#email" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-envelope me-2"></i>Email</a>
+                  <ul class="collapse list-unstyled ms-4" id="email">
+                    <li><a href="">Inbox</a></li>
+                    <li><a href="">Email Detail</a></li>
+                    <li><a href="">Compose</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-0 events">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#events" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-bookmark me-2"></i></i>Events</a>
+                  <ul class="collapse list-unstyled ms-4" id="events">
+                    <li><a href="">Create an event</a></li>
+                    <li><a href="">Event Detail</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-0 kanban">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#kanban" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="ri-trello-line me-2"></i></i>Kanban</a>
+                  <ul class="collapse list-unstyled ms-4" id="kanban">
+                    <li><a href="">Kanban</a></li>
+                    <li><a href="">Boards</a></li>
+                    <li><a href="">Create Board</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#social" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-share me-2"></i></i>Social</a>
+                  <ul class="collapse list-unstyled ms-4" id="social">
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Setting</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i
+                class="bi bi-calendar me-2 ms-2"></i>Calendar</p>
+
+            <p style="color: #6e7891;" class="ms-5 mb-0">PAGES</p>
+
+            <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-compass me-2 ms-2"></i>Starter
+            </p>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#faq" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">
+                  <a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-question-circle me-2"></i></i>Faq</a>
+                  <ul class="collapse list-unstyled ms-4" id="faq">
+                    <li><a href="">Faq accordion</a></li>
+                    <li><a href="">Faq tab</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#landing" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-globe2 me-2"></i></i>Landing</a>
+                  <ul class="collapse list-unstyled ms-4" id="landing">
+                    <li><a href="">Default</a></li>
+                    <li><a href="">Alternate</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#pricing" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-tag me-2"></i></i>Pricing</a>
+                  <ul class="collapse list-unstyled ms-4" id="pricing">
+                    <li><a href="">Pricing column</a></li>
+                    <li><a href="">Pricing grid</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i
+                class="bi bi-bell me-2 ms-2"></i>Notifications</p>
+
+            <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-people me-2 ms-2"></i>Members
+            </p>
+
+            <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-clock me-2 ms-2"></i>Timeline
+            </p>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#errors" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-exclamation-triangle me-2 "></i></i>Errors</a>
+                  <ul class="collapse list-unstyled ms-4" id="errors">
+                    <li><a href="">404</a></li>
+                    <li><a href="">403</a></li>
+                    <li><a href="">500</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#authentication" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="ri-lock-line me-2"></i></i></i>Authentication</a>
+                  <ul class="collapse list-unstyled ms-4" id="authentication">
+                    <li><a href="">Simple</a></li>
+                    <li><a href="">Split</a></li>
+                    <li><a href="">Card</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#layouts" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="ri-layout-line me-2"></i></i></i>Layouts</a>
+                  <ul class="collapse list-unstyled ms-4" id="layouts">
+                    <li><a href="">Vertical sidenav</a></li>
+                    <li><a href="">Dark mode</a></li>
+                    <li><a href="">Sidenav collapse</a></li>
+                    <li><a href="">Darknav</a></li>
+                    <li><a href="">Topnav slim</a></li>
+                    <li><a href="">Navbar top slim</a></li>
+                    <li><a href="">Navbar top</a></li>
+                    <li><a href="">Horizontal slim</a></li>
+                    <li><a href="">Combo nav</a></li>
+                    <li><a href="">Combo nav slim</a></li>
+                    <li><a href="">Dual nav</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <p style="color: #6e7891;" class="ms-5 mb-0">MODULES</p>
+
+
+            <ul class="border-0 mb-0">
+              <li data-bs-toggle="collapse" href="#form1" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
+                <a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                    class="ri-file-text-line me-2"></i></i>Forms</a>
+                <ul class="collapse me-1" id="form1">
+                  <li class="card card-body border-0 p-0" data-bs-toggle="collapse" href="#form2" role="button"
+                    aria-expanded="false" aria-controls="collapseExample"><a href="">Basic</a>
+                    <ul class="collapse list-unstyled ms-4" id="form2">
+                      <li class="card card-body border-0 p-0"><a href="" class="me-1">Form Control</a></li>
+                      <li class="card card-body border-0 p-0"><a href="" class="me-1">Input Contral</a></li>
+                      <li class="card card-body border-0 p-0"><a href="" class="me-1">Select</a></li>
+                      <li class="card card-body border-0 p-0"><a href="" class="me-1">Checks</a></li>
+                      <li class="card card-body border-0 p-0"><a href="" class="me-1">Range</a></li>
+                      <li class="card card-body border-0 p-0"><a href="" class="me-1">Floating Labels</a></li>
+                      <li class="card card-body border-0 p-0"><a href="" class="me-1">Layout</a></li>
+                    </ul>
+                  </li>
+                  <li class="card card-body border-0 p-0 p-0" data-bs-toggle="collapse" href="#form3" role="button"
+                    aria-expanded="false" aria-controls="collapseExample"><a href="">Advance</a>
+                    <ul class="collapse list-unstyled ms-4" id="form3">
+                      <li class="card card-body border-0 p-0"><a href="">Advance Select</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Date picker</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Editor</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">File uploader</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Rating</a></li>
+                      <li class="card card-body border-0 p-0"><a href="">Emoji button</a></li>
+                    </ul>
+                  </li>
+                  <ul>
+                    <li class="card-body border-0 p-0"><a href="">Validation</a></li>
+                    <li class="card-body border-0 p-0"><a href="">Wizard</a></li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#icons" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="ri-apps-2-line me-2"></i></i></i>Icons</a>
+                  <ul class="collapse list-unstyled ms-4" id="icons">
+                    <li><a href="">Feather</a></li>
+                    <li><a href="">Font awesome</a></li>
+                    <li><a href="">Unicons</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#tables" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="ri-table-line me-2"></i></i></i>Tables</a>
+                  <ul class="collapse list-unstyled ms-4" id="tables">
+                    <li><a href="">Basic Tables</a></li>
+                    <li><a href="">Advance Tables</a></li>
+                    <li><a href="">Bulk select</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="border-0 social">
+              <ul class="list-unstyled mb-0">
+                <li data-bs-toggle="collapse" href="#echarts" role="button" aria-expanded="false"
+                  aria-controls="collapseExample"><a href="" style="color: black;"><i
+                      class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                      class="bi bi-bar-chart-fill me-2"></i></i></i>ECharts</a>
+                  <ul class="collapse list-unstyled ms-4" id="echarts">
+                    <li><a href="">Line charts</a></li>
+                    <li><a href="">Bar charts</a></li>
+                    <li><a href="">Candlestick charts</a></li>
+                    <li><a href="">Geo map</a></li>
+                    <li><a href="">Scatter charts</a></li>
+                    <li><a href="">Pie charts</a></li>
+                    <li><a href="">Gauge chart</a></li>
+                    <li><a href="">Radar charts</a></li>
+                    <li><a href="">Heatmap charts</a></li>
+                    <li><a href="">How to use</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="left d-sm-none d-md-none d-lg-block">
+    <div class="row col-12 text-start m-auto">
+      <div class="border-0 home mt-4">
+        <ul class="list-unstyled m-0">
+          <li class="list-styled-none" data-bs-toggle="collapse" href="#home" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="ri-pie-chart-fill me-2"></i>Home</a>
+            <ul class="collapse list-unstyled ms-4" id="home">
+              <li><a href="">E Commerce</a></li>
+              <li><a href="">Project Management</a></li>
+              <li><a href="">CRM</a></li>
+              <li><a href="">Social feed</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <p style="color: #6e7891;" class="ms-4 mb-0">APPS</p>
+
+      <ul class="border-0 list-unstyled mb-0">
+        <li data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+          aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+              style="color: gray;"></i><i class="bi bi-cart me-2"></i>E-Commerce</a>
+          <ul class="collapse" id="collapseExample2">
+            <li class="card card-body border-0 p-0" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+              aria-expanded="false" aria-controls="collapseExample"><a href="">Admin</a>
+              <ul class="collapse" id="collapseExample3">
+                <li class="card card-body border-0 p-0"><a href="">Add Product</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Products</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Customer</a></li>
+              </ul>
+            </li>
+            <li class="card card-body border-0 mt-0 p-0" data-bs-toggle="collapse" href="#collapseExample4"
+              role="button" aria-expanded="false" aria-controls="collapseExample"><a href="">Customer</a>
+              <ul class="collapse" id="collapseExample4">
+                <li class="card card-body border-0 p-0"><a href="">Homepage</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Product details</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Product filter</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="border-0 CRM">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#crm" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                class="bi bi-telephone me-2"></i>CRM</a>
+            <ul class="collapse list-unstyled ms-4" id="crm">
+              <li><a href="">Analytics</a></li>
+              <li><a href="">Deals</a></li>
+              <li><a href="">Deals details</a></li>
+              <li><a href="">Leads</a></li>
+              <li><a href="">Leads details</a></li>
+              <li><a href="">Reports</a></li>
+              <li><a href="">Reports details</a></li>
+              <li><a href="">Add Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <p class="ms-5 mb-0 " c style="color: black; cursor: pointer;"><i class="bi bi-chat-left me-2 ms-2"></i>Chat</p>
+
+      <div class="border-0 email list-unstyled">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#email" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="bi bi-envelope me-2"></i>Email</a>
+            <ul class="collapse list-unstyled ms-4" id="email">
+              <li><a href="">Inbox</a></li>
+              <li><a href="">Email Detail</a></li>
+              <li><a href="">Compose</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-0 events">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#events" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="bi bi-bookmark me-2"></i></i>Events</a>
+            <ul class="collapse list-unstyled ms-4" id="events">
+              <li><a href="">Create an event</a></li>
+              <li><a href="">Event Detail</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-0 kanban">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#kanban" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="ri-trello-line me-2"></i></i>Kanban</a>
+            <ul class="collapse list-unstyled ms-4" id="kanban">
+              <li><a href="">Kanban</a></li>
+              <li><a href="">Boards</a></li>
+              <li><a href="">Create Board</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#social" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="bi bi-share me-2"></i></i>Social</a>
+            <ul class="collapse list-unstyled ms-4" id="social">
+              <li><a href="">Profile</a></li>
+              <li><a href="">Setting</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-calendar me-2 ms-2"></i>Calendar</p>
+
+      <p style="color: #6e7891;" class="ms-5 mb-0">PAGES</p>
+
+      <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-compass me-2 ms-2"></i>Starter</p>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#faq" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+                class="bi bi-question-circle me-2"></i></i>Faq</a>
+            <ul class="collapse list-unstyled ms-4" id="faq">
+              <li><a href="">Faq accordion</a></li>
+              <li><a href="">Faq tab</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#landing" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="bi bi-globe2 me-2"></i></i>Landing</a>
+            <ul class="collapse list-unstyled ms-4" id="landing">
+              <li><a href="">Default</a></li>
+              <li><a href="">Alternate</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#pricing" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="bi bi-tag me-2"></i></i>Pricing</a>
+            <ul class="collapse list-unstyled ms-4" id="pricing">
+              <li><a href="">Pricing column</a></li>
+              <li><a href="">Pricing grid</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-bell me-2 ms-2"></i>Notifications
+      </p>
+
+      <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-people me-2 ms-2"></i>Members</p>
+
+      <p class="ms-5 mb-0" c style="color: black; cursor: pointer;"><i class="bi bi-clock me-2 ms-2"></i>Timeline</p>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#errors" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="bi bi-exclamation-triangle me-2 "></i></i>Errors</a>
+            <ul class="collapse list-unstyled ms-4" id="errors">
+              <li><a href="">404</a></li>
+              <li><a href="">403</a></li>
+              <li><a href="">500</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#authentication" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="ri-lock-line me-2"></i></i></i>Authentication</a>
+            <ul class="collapse list-unstyled ms-4" id="authentication">
+              <li><a href="">Simple</a></li>
+              <li><a href="">Split</a></li>
+              <li><a href="">Card</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#layouts" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="ri-layout-line me-2"></i></i></i>Layouts</a>
+            <ul class="collapse list-unstyled ms-4" id="layouts">
+              <li><a href="">Vertical sidenav</a></li>
+              <li><a href="">Dark mode</a></li>
+              <li><a href="">Sidenav collapse</a></li>
+              <li><a href="">Darknav</a></li>
+              <li><a href="">Topnav slim</a></li>
+              <li><a href="">Navbar top slim</a></li>
+              <li><a href="">Navbar top</a></li>
+              <li><a href="">Horizontal slim</a></li>
+              <li><a href="">Combo nav</a></li>
+              <li><a href="">Combo nav slim</a></li>
+              <li><a href="">Dual nav</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <p style="color: #6e7891;" class="ms-5 mb-0">MODULES</p>
+
+
+      <ul class="border-0 mb-0">
+        <li data-bs-toggle="collapse" href="#form1" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2" style="color: gray;"></i><i
+              class="ri-file-text-line me-2"></i></i>Forms</a>
+          <ul class="collapse me-1" id="form1">
+            <li class="card card-body border-0 p-0" data-bs-toggle="collapse" href="#form2" role="button"
+              aria-expanded="false" aria-controls="collapseExample"><a href="">Basic</a>
+              <ul class="collapse list-unstyled ms-4" id="form2">
+                <li class="card card-body border-0 p-0"><a href="" class="me-1">Form Control</a></li>
+                <li class="card card-body border-0 p-0"><a href="" class="me-1">Input Contral</a></li>
+                <li class="card card-body border-0 p-0"><a href="" class="me-1">Select</a></li>
+                <li class="card card-body border-0 p-0"><a href="" class="me-1">Checks</a></li>
+                <li class="card card-body border-0 p-0"><a href="" class="me-1">Range</a></li>
+                <li class="card card-body border-0 p-0"><a href="" class="me-1">Floating Labels</a></li>
+                <li class="card card-body border-0 p-0"><a href="" class="me-1">Layout</a></li>
+              </ul>
+            </li>
+            <li class="card card-body border-0 p-0 p-0" data-bs-toggle="collapse" href="#form3" role="button"
+              aria-expanded="false" aria-controls="collapseExample"><a href="">Advance</a>
+              <ul class="collapse list-unstyled ms-4" id="form3">
+                <li class="card card-body border-0 p-0"><a href="">Advance Select</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Date picker</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Editor</a></li>
+                <li class="card card-body border-0 p-0"><a href="">File uploader</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Rating</a></li>
+                <li class="card card-body border-0 p-0"><a href="">Emoji button</a></li>
+              </ul>
+            </li>
+            <ul>
+              <li class="card-body border-0 p-0"><a href="">Validation</a></li>
+              <li class="card-body border-0 p-0"><a href="">Wizard</a></li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#icons" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="ri-apps-2-line me-2"></i></i></i>Icons</a>
+            <ul class="collapse list-unstyled ms-4" id="icons">
+              <li><a href="">Feather</a></li>
+              <li><a href="">Font awesome</a></li>
+              <li><a href="">Unicons</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#tables" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="ri-table-line me-2"></i></i></i>Tables</a>
+            <ul class="collapse list-unstyled ms-4" id="tables">
+              <li><a href="">Basic Tables</a></li>
+              <li><a href="">Advance Tables</a></li>
+              <li><a href="">Bulk select</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="border-0 social">
+        <ul class="list-unstyled mb-0">
+          <li data-bs-toggle="collapse" href="#echarts" role="button" aria-expanded="false"
+            aria-controls="collapseExample"><a href="" style="color: black;"><i class="bi bi-caret-right-fill me-2"
+                style="color: gray;"></i><i class="bi bi-bar-chart-fill me-2"></i></i></i>ECharts</a>
+            <ul class="collapse list-unstyled ms-4" id="echarts">
+              <li><a href="">Line charts</a></li>
+              <li><a href="">Bar charts</a></li>
+              <li><a href="">Candlestick charts</a></li>
+              <li><a href="">Geo map</a></li>
+              <li><a href="">Scatter charts</a></li>
+              <li><a href="">Pie charts</a></li>
+              <li><a href="">Gauge chart</a></li>
+              <li><a href="">Radar charts</a></li>
+              <li><a href="">Heatmap charts</a></li>
+              <li><a href="">How to use</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    </div>
+  </div>
+
+  <div class="right bg-light">
+    <div class="container bg-light p-3">
+      <div class="row ms-3 ms-sm-0 ms-lg-3">
+        <div class="col-6 col-sm-12 col-md-12 col-lg-6 head">
+          <h1 class="m-0"><strong>Ecommerce Dashboard</strong></h1>
+          <p>Here’s what’s going on at your business right now</p>
+        </div>
+
+        <div class="col-8 col-sm-12 col-md-12 col-lg-8 head-icons d-flex flex-sm-column flex-md-row justify-content-evenly mt-3 ps-0">
+          <div class="d-flex">
+            <img
+              src="imgaes/1.jpg"
+              alt="" width="50px" height="50px">
+            <div class="div ps-2">
+              <h4 class="m-0">57 new orders</h4>
+              <p class="" style="font-size: 12px;">Awating processing</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img
+              src="imgaes/download.jpg"
+              alt="" width="50px" height="50px">
+            <div class="div ps-2">
+              <h4 class="m-0">5 orders</h4>
+              <p class="" style="font-size: 12px;">On hold</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <img
+              src="imgaes/3.jpg"
+              alt="" width="50px" height="50px">
+            <div class="div ps-2">
+              <h4 class="m-0">15 products</h4>
+              <p class="" style="font-size: 12px;">Out of stock</p>
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="mt-4 mb-4" style="width: 98%;margin: auto;">
+
+      </div>
+    </div>
+
+    <div class="container justify-content-between align-items-center bg-light">
+      <div class="row ms-3 ms-sm-0 ms-lg-3">
+        <div class="col-8 col-sm-12 col-md-8 col-lg-8">
+          <h3 class="m-0">Total sells</h3>
+          <p>Payment received across all channels</p>
+        </div>
+        <div class="col-4 col-sm-12 col-md-4">
+          <select class="p-1" style="border-radius: 5px; width: 100%;font-size: 13px;">
+            <option value="">Mar 1-31,2022</option>
+            <option value="">April 1-30,2022</option>
+            <option value="">May 1-31,2022</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-light">
+      <div class="row ms-3 ms-sm-0 ms-lg-3">
+        <div class="col-12 col-sm-12 col-md-12 m-auto">
+          <canvas id="myChart"></canvas>
+        </div>
+        <script>
+          const ctx = document.getElementById('myChart');
+
+          new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: ['1 May', '', '', '', '', '', '', '15 May', '', '', '', '', '', '', '30 May'],
+              datasets: [{
+                label: '# of Votes',
+                data: [100, 300, 300, 50, 50, 50, 500, 500, 800, 1100, 600, 600, 200, 200, 300, 300],
+                borderWidth: 3
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+      </div>
+    </div>
+
+    <div class="container bg-light">
+      <div class="row ms-3 ms-sm-0 ms-lg-3">
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+          <div class="card p-3 mb-sm-2">
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <h6 class="m-0">Total orders <p class="badge bg-warning text-danger m-0">-6.8%</p>
+                </h6>
+                <p style="font-size: 11px;">Last 7 days</p>
+              </div>
+              <div class="div">
+                <h4>16,247</h4>
+              </div>
+            </div>
+
+            <div class="div">
+              <div class="col-9 m-auto">
+                <canvas id="myChart1"></canvas>
+              </div>
+              <script>
+                const ctq = document.getElementById('myChart1');
+
+                new Chart(ctq, {
+                  type: 'bar',
+                  data: {
+                    labels: ['', '', '', '', '', '', ''],
+                    datasets: [{
+                      label: '',
+                      data: [120, 200, 150, 80, 70, 110, 120],
+                      borderWidth: 1,
+                      barThickness: 5,
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+
+            </div>
+
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <p class="m-0" style="font-size: 11px;"><span class="badge bg-primary m-0"> </span> Completed</p>
+                <p style="font-size: 11px;"><span class="badge m-0" style="background-color: grey;"> </span> Pending
+                  payment</p>
+              </div>
+              <div class="div">
+                <p class="m-0" style="font-size: 12px;">52%</p>
+                <p style="font-size: 12px;">48%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+          <div class="card p-3 mb-sm-2">
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <h6 class="m-0">New customers <p class="badge bg-warning text-danger m-0">+26.5% </p>
+                </h6>
+                <p style="font-size: 11px;">Last 7 days</p>
+              </div>
+              <div class="div">
+                <h4>356</h4>
+              </div>
+            </div>
+            <div class="div">
+              <div class="col-10 m-auto">
+                <canvas id="myChart2"></canvas>
+              </div>
+              <script>
+                const ctw = document.getElementById('myChart2');
+
+                new Chart(ctw, {
+                  type: 'line',
+                  data: {
+                    labels: ['1 May', '', '', '', '', '', ''],
+                    datasets: [{
+                      label: ' ',
+                      data: [200, 150, 250, 100, 500, 400, 600],
+                      borderWidth: 2,
+                      borderColor: 'rgb(75, 192, 192)',
+                      tension: 0.4,
+
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+
+            </div>
+            <hr class="mb-0">
+
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <p class="m-0 ms-5" style="font-size: 11px;">01 May</p>
+
+              </div>
+              <div class="div">
+                <p class="m-0 me-4" style="font-size: 12px;">07 May</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+          <div class="card p-3 mb-sm-2">
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <h6 class="m-0">Top coupons
+                </h6>
+                <p style="font-size: 11px;">Last 7 days</p>
+              </div>
+            </div>
+            <div class="div">
+              <div class="col-8 m-auto">
+                <canvas id="myChart3"></canvas>
+              </div>
+              <script>
+                const cte = document.getElementById('myChart3');
+
+                new Chart(cte, {
+                  type: 'doughnut',
+                  data: {
+                    labels: ['', '', ''],
+                    datasets: [{
+                      label: ' ',
+                      data: [72, 18, 10],
+                      borderWidth: 5,
+                      borderColor: 'blue',
+                      backgroundColor: 'lightblue',
+                      tension: 0.1,
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      x: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+
+            </div>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <p class="m-0" style="font-size: 11px;"><span class="badge bg-primary m-0" style="font-size: 11px;">
+                  </span> Percentage discount</p>
+                <p class="m-0" style="font-size: 11px;"><span class="badge bg-secondary m-0" style="font-size: 11px;">
+                  </span> Fixed card discount</p>
+                <p class="m-0" style="font-size: 11px;"><span class="badge bg-primary m-0" style="font-size: 11px;">
+                  </span> Fixed product discount</p>
+
+
+              </div>
+              <div class="div">
+                <p class="m-0 me-4" style="font-size: 12px;">72%</p>
+                <p class="m-0 me-4" style="font-size: 12px;">18%</p>
+                <p class="m-0 me-4" style="font-size: 12px;">10%</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+          <div class="card p-3 mb-sm-2">
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <h6 class="m-0">Paying vs non paying
+                </h6>
+                <p style="font-size: 11px;">Last 7 days</p>
+              </div>
+            </div>
+            <div class="div">
+              <div class="col-8 m-auto">
+                <canvas id="myChart4"></canvas>
+              </div>
+              <script>
+                const ctr = document.getElementById('myChart4');
+
+                new Chart(ctr, {
+                  type: 'doughnut',
+                  data: {
+                    labels: ['', ''],
+                    datasets: [{
+                      label: ' ',
+                      data: [30, 70],
+                      borderWidth: 5,
+                      borderColor: 'blue',
+                      backgroundColor: 'lightblue',
+                      tension: 0.1,
+                      circumference: 180,
+                      rotation: -90
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      x: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+
+            </div>
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <p class="m-0" style="font-size: 11px;"><span class="badge bg-primary m-0" style="font-size: 11px;">
+                  </span> Paying customer</p>
+                <p class="m-0" style="font-size: 11px;"><span class="badge bg-secondary m-0" style="font-size: 11px;">
+                  </span> Non-paying customer</p>
+              </div>
+              <div class="div mt-3">
+                <p class="m-0 me-4" style="font-size: 12px;">30%</p>
+                <p class="m-0 me-4" style="font-size: 12px;">70%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="m-0">
+    </div>
+
+    <div class="container justify-content-between align-items-center pt-5">
+      <div class="row ms-3 ms-sm-0 ms-lg-3 d-flex justify-content-between">
+        <div class="col-4 col-sm-12 col-md-4 col-lg-4">
+          <h3 class="m-0">Latest reviews</h3>
+          <p>Payment received across all channels</p>
+        </div>
+        <div class="col-7 col-sm-12 col-md-7 col-lg-7 d-flex justify-content-between align-items-center"
+          style="height: 30px;">
+          <input type="text" class="" placeholder=" search" style="width: 60%;border-radius: 5px;">
+          <input type="text" placeholder=" All Products" style="border-radius: 5px;">
+          <i class="bi bi-list ps-2 pe-2" style="border: 2px solid black;border-radius: 5px;"></i>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12" style="font-size: 12px;">
+        <table class="table m-0">
+          <thead>
+            <tr class="p-0">
+              <th style="width:35%">PRODUCT</th>
+              <th style="width:15%">CUSTOMER</th>
+              <th style="width:10%">RATING</th>
+              <th style="width:20%">REVIEW</th>
+              <th style="width:5%">STATUS</th>
+              <th style="width:9%">TIME</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="p-0">
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img//products/60x60/1.png" alt=""
+                  width="35px"><a href="">Fitbit Sense Advanced Smartwatch with Tools fo...</a>
+              </th>
+              <th class="p-1">
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/team/40x40/avatar.webp" class="rounded-circle"
+                  alt="" width="35px"><span>Richard Dawkins</span>
+              </th>
+              <th class="p-0">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </th>
+              <th class="p-0">
+                <span>This Fitbit is fantastic! I was trying to be in <br> better shape and needed some motivation, so
+                  <br> I decided to treat myself to a new Fitbit.</span>
+              </th>
+              <th class="p-0">
+                <p class="badge bg-success">APPROVED<i class="bi bi-check-lg"></i></p>
+              </th>
+              <th class="p-0">
+                <p>Just Now</p>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img//products/60x60/2.png" alt=""
+                  width="35px"><a href="">iPhone 13 pro max-Pacific Blue-128GB storage</a>
+              </th>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/team/40x40/59.webp" class="rounded-circle"
+                  alt="" width="35px"><span>Ashley Garrett</span>
+              </th>
+              <th>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </th>
+              <th>
+                <span>The order was delivered ahead of schedule. To <br> give us additional time, you should leave <br>
+                  the packaging sealed with plastic.</span>
+              </th>
+              <th>
+                <p class="badge bg-success">APPROVED<i class="bi bi-check-lg"></i></p>
+              </th>
+              <th>
+                <p>Just Now</p>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img//products/60x60/3.png" alt=""
+                  width="35px"><a href="">Apple MacBook Pro 13 inch-M1-8/256GB-space</a>
+              </th>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/team/40x40/58.webp" class="rounded-circle"
+                  alt="" width="35px"><span>Woodrow Burton</span>
+              </th>
+              <th>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </th>
+              <th>
+                <span>It's a Mac, after all. Once you've gone Mac, there's no going back. My first Mac lasted over nine
+                  years, and this is my second.</span>
+              </th>
+              <th>
+                <p class="badge bg-warning text-danger">PENDING <i class="bi bi-stopwatch text-danger"></i></p>
+              </th>
+              <th>
+                <p>Just Now</p>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img//products/60x60/4.png" alt=""
+                  width="35px"><a href="">Apple iMac 24" 4K Retina Display M1 8 Core CPU...</a>
+              </th>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/team/40x40/avatar.webp"
+                  class="rounded-circle" alt="" width="35px"><span>Eric McGee</span>
+              </th>
+              <th>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star  "></i>
+                <i class="bi bi-star"></i>
+              </th>
+              <th>
+                <span>Personally, I like the minimalist style, but I wouldn't choose it if I were searching for a
+                  computer that I would use frequently.</span>
+              </th>
+              <th>
+                <p class="badge bg-warning text-danger">PENDING <i class="bi bi-stopwatch text-danger"></i></p>
+              </th>
+              <th>
+                <p>Nov 9,3:23 AM</p>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img//products/60x60/5.png" alt=""
+                  width="35px"><a href="">Razer Kraken v3 x Wired 7.1 Surroung Sound Gam...</a>
+              </th>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/team/40x40/avatar.webp"
+                  class="rounded-circle" alt="" width="35px"><span>Kim Carroll</span>
+              </th>
+              <th>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </th>
+              <th>
+                <span>It performs exactly as expected. There are three of these in the family.</span>
+              </th>
+              <th>
+                <p class="badge bg-warning text-danger">PENDING <i class="bi bi-stopwatch text-danger"></i></p>
+              </th>
+              <th>
+                <p>Nov 9,2:15 PM</p>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img//products/60x60/6.png" alt=""
+                  width="35px"><a href=""> PlayStation 5 DualSense Wireless Controller</a>
+              </th>
+              <th>
+                <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/team/40x40/57.webp" class="rounded-circle"
+                  alt="" width="35px"><span>
+                  Barbara Lucas</span>
+              </th>
+              <th>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </th>
+              <th>
+                <span>The controller is quite comfy for me. Despite its increased size, the controller still fits well
+                  in my hands.</span>
+              </th>
+              <th>
+                <p class="badge bg-success">APPROVED <i class="bi bi-check-lg"></i></p>
+              </th>
+              <th>
+                <p>Nov 8,8:53 AM</p>
+              </th>
+            </tr>
+
+
+          </tbody>
+        </table>
+        <hr class="m-0">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row ms-sm-0 pe-2">
+        <div class="col-6 col-sm-12 col-md-12 col-lg-6 bg-light p-2 pt-lg-1 ">
+          <h3 class="m-0">Top regions by revenue</h3>
+          <p>Where you generated most of the revenue</p>
+          <table class="table overflow-hidden">
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>Users</th>
+                <th>Transactions</th>
+                <th>Revenue</th>
+                <th>Conv.Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>
+                  <h5>377,630</h5>
+                </td>
+                <td>
+                  <h5>236</h5>
+                </td>
+                <td>
+                  <h5>$15,758</h5>
+                </td>
+                <td>
+                  <h5>10.32%</h5>
+                </td>
+              </tr>
+              <tr>
+                <td>1.<img src="https://prium.github.io/phoenix/v1.14.0/assets/img/country/india.png" alt=""
+                    height="20px" width="20px"> India</td>
+                <td>82896 (41.6%)</td>
+                <td>67 (34.3%)</td>
+                <td>$7560</td>
+                <td>14.24%</td>
+              </tr>
+              <tr>
+                <td>2.<img src="https://prium.github.io/phoenix/v1.14.0/assets/img/country/china.png" alt=""
+                    height="20px" width="20px"> china</td>
+                <td>50496 (24.3%)</td>
+                <td>54 (23.8%)</td>
+                <td>$5633</td>
+                <td>55.55%</td>
+              </tr>
+              <tr>
+                <td>3.<img src="https://prium.github.io/phoenix/v1.14.0/assets/img/country/usa.png" alt="" height="20px"
+                    width="20px"> usa</td>
+                <td>45679 (19.7%)</td>
+                <td>35 (19.7%)</td>
+                <td>$4235</td>
+                <td>12.55%</td>
+              </tr>
+              <tr>
+                <td>4. <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/country/vietnam.png" alt=""
+                    height="20px" width="20px"> vietnam</td>
+                <td>15007 (11.9%)</td>
+                <td>17 (6.91%)</td>
+                <td>$2456</td>
+                <td>10.2%</td>
+              </tr>
+              <tr>
+                <td>5. <img src="https://prium.github.io/phoenix/v1.14.0/assets/img/country/south-korea.png" alt=""
+                    height="20px" width="20px"> southkorea</td>
+                <td>36453 (19.7%)</td>
+                <td>22 (9.54%)</td>
+                <td>$4673</td>
+                <td>11.6%</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="col-6 col-sm-12 col-md-12 col-lg-6 p-0 overflow-hidden bg-light">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119040.88071947453!2d72.83998720000001!3d21.191065599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1smr!2sin!4v1707760025625!5m2!1smr!2sin"
+            width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <hr class="m-0">
+    </div>
+
+    <div class="container pt-5 bg-white">
+      <div class="row">
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+          <div class="card p-3 border-white">
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <h6 class="m-0">Total orders <p class="badge bg-warning text-danger m-0">-6.8%</p>
+                </h6>
+                <p style="font-size: 11px;">Last 7 days</p>
+              </div>
+              <div class="div">
+                <h4>16,247</h4>
+              </div>
+            </div>
+
+            <div class="div">
+              <div class="col-9 m-auto">
+                <canvas id="myChart5"></canvas>
+              </div>
+              <script>
+                const ctt = document.getElementById('myChart5');
+
+                new Chart(ctt, {
+                  type: 'bar',
+                  data: {
+                    labels: ['', '', '', '', '', '', ''],
+                    datasets: [{
+                      label: '',
+                      data: [120, 200, 150, 80, 70, 110, 120],
+                      borderWidth: 1,
+                      barThickness: 5,
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+
+            </div>
+
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <p class="m-0" style="font-size: 11px;"><span class="badge bg-primary m-0"> </span> Completed</p>
+                <p style="font-size: 11px;"><span class="badge m-0" style="background-color: grey;"> </span> Pending
+                  payment</p>
+              </div>
+              <div class="div">
+                <p class="m-0" style="font-size: 12px;">52%</p>
+                <p style="font-size: 12px;">48%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6">
+          <div class="card p-3 border-white">
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <h6 class="m-0">New customers <p class="badge bg-warning text-danger m-0">+26.5% </p>
+                </h6>
+                <p style="font-size: 11px;">Last 7 days</p>
+              </div>
+              <div class="div">
+                <h4>356</h4>
+              </div>
+            </div>
+            <div class="div">
+              <div class="col-10 m-auto">
+                <canvas id="myChart6"></canvas>
+              </div>
+              <script>
+                const ctu = document.getElementById('myChart6');
+
+                new Chart(ctu, {
+                  type: 'line',
+                  data: {
+                    labels: ['1 May', '', '', '', '', '', ''],
+                    datasets: [{
+                      label: ' ',
+                      data: [200, 150, 250, 100, 500, 400, 600],
+                      borderWidth: 2,
+                      borderColor: 'rgb(75, 192, 192)',
+                      tension: 0.4,
+
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+
+            </div>
+            <hr class="mb-0">
+
+            <div class="div d-flex justify-content-between align-items-center">
+              <div class="div">
+                <p class="m-0 ms-5" style="font-size: 11px;">01 May</p>
+
+              </div>
+              <div class="div">
+                <p class="m-0 me-4" style="font-size: 12px;">07 May</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="m-0">
+    </div>
+
+    <div class="container bg-light p-3">
+      <div class="row footer ms-3">
+        <h6>Thank you for creating with Phoenix|2023 ©<a href=""> Themewagon</a></h6>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</body>
+
+</html>
