@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/LineProgressbar-master/jquery.lineProgressbar.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="main">
+        <div id="progressbar1"></div>
+        <div id="progressbar2"></div>
+        <div id="progressbar3"></div>
+        <div id="progressbar4"></div>
+        <div id="progressbar5"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="/LineProgressbar-master/jquery.lineProgressbar.js"></script>
+
+    <script>
+        $('#progressbar1').LineProgressbar({percentage:90});
+        $('#progressbar2').LineProgressbar({percentage:50});
+        $('#progressbar3').LineProgressbar({percentage:65});
+        $('#progressbar4').LineProgressbar({percentage:40});
+        $('#progressbar5').LineProgressbar({percentage:70});
+        
+    </script>
+
+</body>
+</html>
