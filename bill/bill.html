@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Bill</h1>
+     <input type="text" placeholder="enter quantity" id="quantity">
+     <br><br>
+     <input type="text" placeholder="enter price" id="price">
+     <br><br>
+     <input type="text" placeholder="enter tax" id="tax">
+     <br><br>
+
+     <button onclick="bill()">Total</button>
+     
+     <h2>final Amount is: <span id="amount"></span></h2>
+
+     <script>
+        function bill()
+        {
+            let a = document.getElementById("quantity").value;
+            let b = document.getElementById("price").value;
+            let c = document.getElementById("tax").value;
+
+            let total = parseInt(a) * parseInt(b);
+            let tax = (total * c)/100;
+
+            let amount = total + tax;
+
+            document.getElementById("amount").innerHTML = amount;
+
+        }   
+     </script>
+    
+</body>
+</html>

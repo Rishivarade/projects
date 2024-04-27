@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Salary Info</h1>
+
+    <input type="text" placeholder="total Salary" id="total_Salary">
+    <input type="text" placeholder="total days" id="total_days">
+    <br><br>
+
+    <button onclick="totalSalary()">submit</button>
+    <h2>Per Day Salary: <span id="salary"></span></h2>
+    
+    <input type="text" placeholder=" per day salary" id="pds">
+    <input type="text" placeholder="present days" id="pd">
+    <br><br>
+    <button onclick="finalSalary()">submit</button>
+    <h2>Final Salary is: <span id="finalSalary"></span></h2>
+
+    <script>
+        function totalSalary()
+        {
+            let totalsalary= document.getElementById("total_Salary").value;
+            let totaldays= document.getElementById("total_days").value;
+
+            let per_day_salary= parseInt(totalsalary) / parseInt(totaldays);
+            document.getElementById("salary").innerHTML= per_day_salary;
+        }
+        function finalSalary()
+        {
+            let per_day_salary= document.getElementById("pds").value;
+            let present_days= document.getElementById("pd").value;
+
+            let finalSalary= parseInt(per_day_salary) * parseInt(present_days);
+            document.getElementById("finalSalary").innerHTML= finalSalary;
+        }
+    </script>
+</body>
+</html>

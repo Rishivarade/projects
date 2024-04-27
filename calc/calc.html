@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter value 1" id="val1">
+    <input type="text" placeholder="enter value 2" id="val2">
+    <br><br>
+    <button onclick ="calc()">print</button>
+    
+    <h2>sum is: <span id="sum"></span></h2>
+    <h2>sub is: <span id="sub"></span></h2>
+    <h2>mul is: <span id="mul"></span></h2>
+    <h2>div is: <span id="div"></span></h2>
+    <h2>mod is: <span id="mod"></span></h2>
+
+    <script>
+        function calc()
+        {
+            let a = document.getElementById("val1").value;
+            let b = document.getElementById("val2").value;
+
+            let sum = parseInt(a) + parseInt(b);
+            let sub = parseInt(a) - parseInt(b);
+            let mul = parseInt(a) * parseInt(b);
+            let div = parseInt(a) / parseInt(b);
+            let mod = parseInt(a) % parseInt(b);
+
+            document.getElementById("sum").innerHTML = sum;
+            document.getElementById("sub").innerHTML = sub;
+            document.getElementById("mul").innerHTML = mul;
+            document.getElementById("div").innerHTML = div;
+            document.getElementById("mod").innerHTML = mod;
+        }
+    </script>
+    
+</body>
+</html>

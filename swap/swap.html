@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Swapping</h1>
+    <input type="text" placeholder="value A" id="val1">
+    <input type="text" placeholder="vaue B" id="val2">
+    <br><br>
+    <button onclick="swap()">submit</button>
+
+    <h2>after Swapping</h2>
+    <h3>value of A: <span id="A"></span></h3>
+    <h3>value of B: <span id="B"></span></h3>
+
+    <script>
+        function swap()
+        {
+            let a= document.getElementById("val1").value;
+            let b= document.getElementById("val2").value;
+
+            let c = a;
+                a = b;
+                b = c;
+
+            document.getElementById("A").innerHTML= a;
+            document.getElementById("B").innerHTML= b;
+
+        }
+    </script>
+</body>
+</html>

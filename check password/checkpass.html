@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="password" id="pwd">
+    <input type="text" placeholder="confirm password" id="cpwd">
+    <br>
+    <button onclick="check()">submit</button>
+
+    <script>
+        function check()
+        {
+            let a= document.getElementById("pwd").value;
+            let b= document.getElementById("cpwd").value;
+
+            if(a ==""|| b =="")
+            {
+                alert("please enter password");
+                return false;
+            }
+            if(a!=b)
+            {
+                alert("invalid password");
+                return false;
+            }
+            else
+            {
+                alert("login successful");
+                return true;
+            }
+        }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="password" id="pwd"><br><br>
+    <input type="text" placeholder="new password" id="npwd"><br><br>
+    <input type="text" placeholder="confirm password" id="cpwd"><br><br>
+
+    <button onclick="reset()">submit</button>
+
+    <script>
+        function reset()
+        {
+            let password= 123;
+
+            let pwd= document.getElementById("pwd").value;
+            let npwd= document.getElementById("npwd").value;
+            let cpwd= document.getElementById("cpwd").value;
+
+            if(pwd == "" || npwd == "" || cpwd =="")
+            {
+                alert("please enter password");
+                return false;
+            }
+            if(password != pwd)
+            {
+                alert("password not matched");
+                return false;
+            }
+            if(npwd!= cpwd)
+            {
+                alert("new & confirm password not matched")
+                return false;
+            }
+            else
+            {
+                alert("passord reset successfully");
+                return true;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
