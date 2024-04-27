@@ -1,0 +1,240 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    --one:white;
+    --two:black;
+    --three:rgb(126, 6, 96);
+
+}
+body
+{
+    height: 60vh;
+    background-image: url('https://images.unsplash.com/photo-1546948630-1149ea60dc86?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 30px 15%;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 1000;
+    
+}
+header.sticky
+{
+    background-color: var(--three);   
+}
+.for-text .row-one
+{
+    display: flex;
+}  
+.row-one li
+{
+    padding-left: 10px;
+    display: block;
+}
+li a
+{
+    margin: 5px;
+    color: var(--one);
+    transition: all 0.3s ease-in-out;           
+}
+li  a:hover
+{
+    background-color: var(--two);
+    border: 1px solid var(--one);
+    box-shadow: 0px 0px 10px var(--two);
+}
+section
+{
+   width: 100%;
+   height: 300px;
+ padding-top: 5%;    
+}
+.text
+{
+    padding-top: 10%;
+    padding-left: 15%;
+    font-size: 20px;
+}
+h1
+{
+    color: var(--three);
+}
+p 
+{
+    text-align: center;
+    color: var(--one);
+}
+.zoom
+{
+    margin-top: 10px;
+    padding: 5px;
+    display:inline-block;
+    color: var(--one);
+    transition: all 0.3s ease-in-out; 
+}
+.zoom:hover
+{
+    background-color: var(--one);
+    color: var(--two);
+    border: 1px solid var(--one);
+    border-radius: 4%;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px;
+}
+.bar
+{
+    width: 100%;
+    height: 200px;
+    margin-top: 30%;
+    padding: 30px 15%;
+}
+.line
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.bar p
+{
+    color: var(--two);
+}
+.img-text
+{
+    justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.img-text img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 4%;
+    filter: grayscale(100);
+    transition: all 0.2s ease-in-out;
+}
+.img-text img:hover
+{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px var(--two);
+}
+.main
+{
+    width: 100%;
+    height: 300px;
+    margin-top: 10%;
+}
+.row
+{
+    width:100%;
+    padding: 30px 15%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.main .row .img-col img 
+{   width: 100%;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+}
+.main .row .img-col img:hover
+{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px var(--two);
+}
+.main p
+{
+    color: var(--two);
+    font-weight: bold;
+}
+.gallery
+{
+    width: 100%;
+    height: 550px;
+    margin-top: 10%;
+ 
+}
+.gallery h1
+{
+    padding-left: 10%;
+}
+.row2
+{
+    width:100%;
+    padding: 30px 15%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+        
+}
+.gallery .row2 .img-col2 img 
+{   width: 100%;
+    height: 200px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10%;
+}
+.gallery .row2 .img-col2 img:hover
+{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px var(--two);
+}
+ .gallery .row2 p
+{
+    color: var(--two);
+    font-weight: bold;
+    text-align: left;
+}
+.footer
+{
+    width: 100%;
+    height: 150px;
+    margin-top: 10%;
+    padding: 30px 15%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot1
+{
+    text-align: left;
+}
+.btn input:first-child
+{
+    border: none;
+    margin-left: 20px;
+    padding: 5px 0px;
+    width: 70px;
+   
+}
+.btn input:last-child
+{
+    background-color: rgb(76, 15, 218);
+    outline: none;
+    border: none;
+    width: 80px;
+    padding: 10px;   
+}
+.content
+{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(76, 15, 218);;
+}
