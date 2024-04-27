@@ -1,0 +1,1257 @@
+@media (max-width:480px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    header .navbar {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        background-color: brown;
+        padding: 30px 15%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .menu ul {
+        display: flex;
+        color: white;
+    }
+    .menu ul li {
+        text-decoration: none;
+        padding-left: 10px;
+        list-style: none;
+        color: white;
+    }
+    .banner img {
+        height: 650px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .layer {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+    }
+    .layer h1 {
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .layer p {
+        color: aliceblue;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .layer a {
+        color: aliceblue;
+        border: 1px solid white;
+        padding: 5px;
+    }
+    .side {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left {
+        padding-left: 10%;
+    }
+    .right {
+        font-size: 10px;
+    }
+    .box {
+        width: 100%;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .box1 {
+        width: 60%;
+        height: 300px;
+        margin: auto;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box2 {
+        width: 60%;
+        height: 300px;
+        margin: auto;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+        margin-top: 15%;
+    }
+    .box3 {
+        width: 60%;
+        height: 300px;
+        margin: auto;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+        margin-top: 15%;
+    }
+    .box1,
+    .box2,
+    .box3 h2 {
+        padding: 10px;
+    }
+    .box1 p {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+    }
+    .box2 p {
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+    .box3 p {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+    }
+    .box1 span {
+        color: black;
+        position: absolute;
+        bottom: -30%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box2 span {
+        color: black;
+        position: absolute;
+        bottom: -30%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box3 span {
+        color: black;
+        position: absolute;
+        bottom: -30%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .content {
+        width: 100%;
+        height: 450px;
+        position: relative;
+        margin-top: 20%;
+    }
+    .content img {
+        width: 100%;
+        height: 450px;
+    }
+    .content h1 {
+        position: absolute;
+        bottom: 55%;
+        font-size: 35px;
+        left: 20%;
+        text-align: right;
+    }
+    .content p {
+        position: absolute;
+        bottom: 45%;
+        left: 30%;
+        text-align: right;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .content a {
+        position: absolute;
+        bottom: 38%;
+        left: 58%;
+        font-size: 20px;
+        color: black;
+        background-color: aliceblue;
+        border: 1px solid white;
+        border-radius: 2px;
+    }
+    .gallery {
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .lhs h3 {
+        font-size: 10px;
+        text-align: center;
+    }
+    .lhs p {
+        font-size: 30px;
+        text-align: center
+    }
+    .frame {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .frame1 {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame1 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame-text {
+        padding-left: 20px;
+    }
+    .frame1 .frame-text1 {
+        position: absolute;
+        bottom: -35%;
+        padding-left: 20%;
+    }
+    .frame2 {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+        margin-top: 25%;
+    }
+    .frame2 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame2 .frame-text2 {
+        position: absolute;
+        bottom: -40%;
+        padding-left: 10%;
+    }
+    .frame3 {
+        width: 100%;
+        height: 250px;
+        margin-top: 25%;
+        text-align: center;
+        position: relative;
+    }
+    .frame3 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame3 .frame-text3 {
+        position: absolute;
+        bottom: -35%;
+        padding-left: 20%;
+    }
+    .frame-text1 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text2 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text3 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .foot {
+        width: 65%;
+        height: 400px;
+        background-color: black;
+        margin-left: 25%;
+        position: relative;
+        margin-top: 80%;
+    }
+    .foot .div img {
+        width: 40%;
+        height: 300px;
+        margin-top: 6%;
+        position: absolute;
+        left: -20%;
+    }
+    .foot .div h1 {
+        text-align: center;
+        color: aliceblue;
+        padding-top: 8%;
+        font-size: 20px;
+    }
+    .foot .div p {
+        text-align: justify;
+        font-size: 11px;
+        margin-left: 30%;
+        color: aliceblue;
+    }
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: aqua;
+        margin-top: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .left {
+        display: block;
+        padding-left: 5%;
+        width: 10%;
+    }
+    .footer .right ul li {
+        height: 50px;
+        float: right;
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        padding-right: 10px;
+        padding-top: 10%;
+        color: aliceblue;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    header .navbar {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        background-color: brown;
+        padding: 30px 15%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .menu ul {
+        display: flex;
+        color: white;
+    }
+    .menu ul li {
+        text-decoration: none;
+        padding-left: 10px;
+        list-style: none;
+        color: white;
+    }
+    .banner img {
+        height: 650px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .layer {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+    }
+    .layer h1 {
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .layer p {
+        color: aliceblue;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .layer a {
+        color: aliceblue;
+        border: 1px solid white;
+        padding: 5px;
+    }
+    .side {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left {
+        padding-left: 10%;
+    }
+    .right {
+        font-size: 10px;
+    }
+    .box {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .box1 {
+        width: 50%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box2 {
+        width: 50%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box3 {
+        width: 100%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+        margin-top: 20%;
+    }
+    .box1,
+    .box2,
+    .box3 h2 {
+        padding: 10px;
+    }
+    .box1 p {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    }
+    .box2 p {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+    .box3 p {
+        position: absolute;
+        top: 35%;
+        left: 20%;
+    }
+    .box1 span {
+        color: black;
+        position: absolute;
+        bottom: -50%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box2 span {
+        color: black;
+        position: absolute;
+        bottom: -50%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box3 span {
+        color: black;
+        position: absolute;
+        bottom: -40%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .content {
+        width: 100%;
+        height: 450px;
+        position: relative;
+        margin-top: 45%;
+    }
+    .content img {
+        width: 100%;
+        height: 450px;
+    }
+    .content h1 {
+        position: absolute;
+        bottom: 55%;
+        font-size: 35px;
+        left: 40%;
+        text-align: right;
+    }
+    .content p {
+        position: absolute;
+        bottom: 45%;
+        left: 46%;
+        text-align: right;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .content a {
+        position: absolute;
+        bottom: 38%;
+        left: 64%;
+        font-size: 20px;
+        color: black;
+        background-color: aliceblue;
+        border: 1px solid white;
+        border-radius: 2px;
+    }
+    .gallery {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .lhs h3 {
+        font-size: 10px;
+    }
+    .lhs p {
+        font-size: 30px;
+    }
+    .frame {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .frame1 {
+        width: 50%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame1 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame-text {
+        padding-left: 20px;
+    }
+    .frame1 .frame-text1 {
+        position: absolute;
+        bottom: -28%;
+        padding-left: 20%;
+    }
+    .frame2 {
+        width: 50%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame2 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame2 .frame-text2 {
+        position: absolute;
+        bottom: -30%;
+        padding-left: 10%;
+    }
+    .frame3 {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+        margin-top: 15%;
+    }
+    .frame3 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame3 .frame-text3 {
+        position: absolute;
+        bottom: -30%;
+        padding-left: 30%;
+    }
+    .frame-text1 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text2 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text3 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .foot {
+        width: 65%;
+        height: 500px;
+        background-color: black;
+        margin-left: 25%;
+        position: relative;
+        margin-top: 40%;
+    }
+    .foot .div img {
+        width: 40%;
+        height: 400px;
+        margin-top: 6%;
+        position: absolute;
+        left: -20%;
+    }
+    .foot .div h1 {
+        text-align: center;
+        color: aliceblue;
+        padding-top: 8%;
+        font-size: 25px;
+    }
+    .foot .div p {
+        text-align: justify;
+        font-size: 15px;
+        margin-left: 35%;
+        color: aliceblue;
+    }
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        color: aqua;
+        margin-top: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .left {
+        display: block;
+        padding-left: 5%;
+        width: 10%;
+    }
+    .footer .right ul li {
+        height: 50px;
+        float: right;
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        padding-top: 10%;
+        padding-right: 10px;
+        color: aliceblue;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    header .navbar {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        background-color: brown;
+        padding: 30px 15%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .menu ul {
+        display: flex;
+        color: white;
+    }
+    .menu ul li {
+        text-decoration: none;
+        padding-left: 10px;
+        list-style: none;
+        color: white;
+    }
+    .banner img {
+        height: 650px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .layer {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+    }
+    .layer h1 {
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .layer p {
+        color: aliceblue;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .layer a {
+        color: aliceblue;
+        border: 1px solid white;
+        padding: 5px;
+    }
+    .side {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left {
+        padding-left: 10%;
+    }
+    .right {
+        font-size: 10px;
+    }
+    .box {
+        width: 80%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .box1 {
+        width: 30%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box2 {
+        width: 30%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box3 {
+        width: 30%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box1,
+    .box2,
+    .box3 h2 {
+        padding: 10px;
+    }
+    .box1 p {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    }
+    .box2 p {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+    .box3 p {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    .box1 span {
+        color: black;
+        position: absolute;
+        bottom: -50%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box2 span {
+        color: black;
+        position: absolute;
+        bottom: -50%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box3 span {
+        color: black;
+        position: absolute;
+        bottom: -30%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .content {
+        width: 100%;
+        height: 450px;
+        position: relative;
+    }
+    .content img {
+        width: 100%;
+        height: 450px;
+    }
+    .content h1 {
+        position: absolute;
+        bottom: 55%;
+        font-size: 35px;
+        left: 45%;
+        text-align: right;
+    }
+    .content p {
+        position: absolute;
+        bottom: 45%;
+        left: 50%;
+        text-align: right;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .content a {
+        position: absolute;
+        bottom: 38%;
+        left: 64%;
+        font-size: 20px;
+        color: black;
+        background-color: aliceblue;
+        border: 1px solid white;
+        border-radius: 2px;
+    }
+    .gallery {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .lhs h3 {
+        font-size: 10px;
+    }
+    .lhs p {
+        font-size: 30px;
+    }
+    .frame {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .frame1 {
+        width: 30%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame1 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame-text {
+        padding-left: 20px;
+    }
+    .frame1 .frame-text1 {
+        position: absolute;
+        bottom: -28%;
+        padding-left: 20%;
+    }
+    .frame2 {
+        width: 30%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame2 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame2 .frame-text2 {
+        position: absolute;
+        bottom: -30%;
+        padding-left: 10%;
+    }
+    .frame3 {
+        width: 30%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame3 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame3 .frame-text3 {
+        position: absolute;
+        bottom: -30%;
+        padding-left: 10%;
+    }
+    .frame-text1 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text2 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text3 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .foot {
+        width: 65%;
+        height: 500px;
+        background-color: black;
+        margin-left: 25%;
+        position: relative;
+    }
+    .foot .div img {
+        width: 40%;
+        height: 400px;
+        margin-top: 6%;
+        position: absolute;
+        left: -20%;
+    }
+    .foot .div h1 {
+        text-align: center;
+        color: aliceblue;
+        padding-top: 8%;
+        font-size: 35px;
+    }
+    .foot .div p {
+        text-align: justify;
+        font-size: 20px;
+        margin-left: 36%;
+        color: aliceblue;
+    }
+    .footer {
+        width: 100%;
+        height: 150px;
+        background-color: black;
+        color: aqua;
+        margin-top: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .left {
+        display: block;
+        padding-left: 5%;
+        width: 10%;
+    }
+    .footer .right ul li {
+        height: 50px;
+        float: right;
+        display: flex;
+        list-style: none;
+        font-size: 40px;
+        padding-right: 10px;
+        color: aliceblue;
+    }
+}
+
+@media(min-width:1025px) and (max-width:1200px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    header .navbar {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        background-color: brown;
+        padding: 30px 15%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .menu ul {
+        display: flex;
+        color: white;
+    }
+    .menu ul li {
+        text-decoration: none;
+        padding-left: 10px;
+        list-style: none;
+        color: white;
+    }
+    .banner img {
+        height: 650px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .layer {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+    }
+    .layer h1 {
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .layer p {
+        color: aliceblue;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .layer a {
+        color: aliceblue;
+        border: 1px solid white;
+        padding: 5px;
+    }
+    .side {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left {
+        padding-left: 10%;
+    }
+    .right {
+        font-size: 10px;
+    }
+    .box {
+        width: 50%;
+        height: 350px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .box1 {
+        width: 30%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box2 {
+        width: 30%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box3 {
+        width: 30%;
+        height: 200px;
+        color: aquamarine;
+        background-color: black;
+        position: relative;
+    }
+    .box1,
+    .box2,
+    .box3 h2 {
+        padding: 10px;
+    }
+    .box1 p {
+        position: absolute;
+        top: 35%;
+        left: 15%;
+    }
+    .box2 p {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+    .box3 p {
+        position: absolute;
+        top: 35%;
+        left: 20%;
+    }
+    .box1 span {
+        color: black;
+        position: absolute;
+        bottom: -50%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box2 span {
+        color: black;
+        position: absolute;
+        bottom: -50%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .box3 span {
+        color: black;
+        position: absolute;
+        bottom: -40%;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .content {
+        width: 100%;
+        height: 450px;
+        position: relative;
+    }
+    .content img {
+        width: 100%;
+        height: 450px;
+    }
+    .content h1 {
+        position: absolute;
+        bottom: 55%;
+        font-size: 35px;
+        left: 50%;
+        text-align: right;
+    }
+    .content p {
+        position: absolute;
+        bottom: 45%;
+        left: 54%;
+        text-align: right;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .content a {
+        position: absolute;
+        bottom: 38%;
+        left: 64%;
+        font-size: 20px;
+        color: black;
+        background-color: aliceblue;
+        border: 1px solid white;
+        border-radius: 2px;
+    }
+    .gallery {
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .lhs h3 {
+        font-size: 10px;
+    }
+    .lhs p {
+        font-size: 30px;
+    }
+    .frame {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .frame1 {
+        width: 30%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame1 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame-text {
+        padding-left: 20px;
+    }
+    .frame1 .frame-text1 {
+        position: absolute;
+        bottom: -28%;
+        padding-left: 20%;
+    }
+    .frame2 {
+        width: 30%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame2 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame2 .frame-text2 {
+        position: absolute;
+        bottom: -30%;
+        padding-left: 10%;
+    }
+    .frame3 {
+        width: 30%;
+        height: 250px;
+        text-align: center;
+        position: relative;
+    }
+    .frame3 img {
+        height: 100%;
+        width: 100%;
+    }
+    .frame3 .frame-text3 {
+        position: absolute;
+        bottom: -30%;
+        padding-left: 10%;
+    }
+    .frame-text1 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text2 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .frame-text3 a {
+        border: 1px solid coral;
+        padding: 3px;
+        background-color: coral;
+        color: aquamarine;
+        text-decoration: none;
+    }
+    .foot {
+        width: 65%;
+        height: 500px;
+        background-color: black;
+        margin-left: 25%;
+        position: relative;
+    }
+    .foot .div img {
+        width: 40%;
+        height: 400px;
+        margin-top: 6%;
+        position: absolute;
+        left: -20%;
+    }
+    .foot .div h1 {
+        text-align: center;
+        color: aliceblue;
+        padding-top: 8%;
+        font-size: 35px;
+    }
+    .foot .div p {
+        text-align: justify;
+        font-size: 20px;
+        margin-left: 40%;
+        color: aliceblue;
+    }
+    .footer {
+        width: 100%;
+        height: 150px;
+        background-color: black;
+        color: aqua;
+        margin-top: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .left {
+        display: block;
+        padding-left: 5%;
+        width: 10%;
+    }
+    .footer .right ul li {
+        height: 50px;
+        float: right;
+        display: flex;
+        list-style: none;
+        font-size: 40px;
+        padding-right: 10px;
+        color: aliceblue;
+    }
+}
